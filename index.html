@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <script src="./script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row text-center m-3 px-3">
+        <h2>Car World</h2>
+        <div class="col-4 text-center m-4 py-4 px-5 border border-2 rounded bg-light">
+            <h4 class="mb-3">Enter Details</h4>
+            <label class="mb-2" for="">Car Brand</label><br>
+            <input id="brand" class="form-control mb-2" type="text" placeholder="Car Brand">
+            <label class="mb-2" for="">Price</label><br>
+            <input id="price" class="form-control mb-2" type="text" placeholder="Price">
+            <label class="mb-2" for="">Key</label><br>
+            <input id="key" class="form-control mb-2" type="text" placeholder="Key">
+            <button class="btn mt-3 btn-dark" onclick="store()">Store Records</button>
+        </div>
+        <div class="col-3 text-center m-4 py-4 px-5 border border-2 rounded bg-light">
+            <h4 class="m-3">Enter Key to Retrieve Item</h4>
+            <label class="mb-2" for="">Key</label><br>
+            <input id="retr" class="form-control mb-2" type="text" placeholder="Key">
+            <button class="btn mt-3 btn-dark" onclick="retrieve()">Retrieve Records</button>
+            <div id="retrdisp"></div>
+        </div>
+        <div class="col-3 text-center m-4 py-4 px-5 border border-2 rounded bg-light">
+            <h4 class="m-3">Enter Key to Delete Item</h4>
+            <label class="mb-2" for="">Key</label><br>
+            <input id="remo" class="form-control mb-2" type="text" placeholder="Key">
+            <button class="btn mt-3 btn-dark" onclick="remove()">Remove Records</button>
+        </div>
+        <button class="btn mt-2 btn-dark" onclick="clearrec()">Clear All Records</button>
+    </div>
+</body>
+</html>
